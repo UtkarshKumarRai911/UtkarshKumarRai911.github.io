@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utkarsh Kumar Rai — AI Engineer & SDE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- FULL PAGE NEURAL NETWORK BACKGROUND -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">UKR<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <img id="profile-photo" src="photo.png" alt="Utkarsh Kumar Rai" class="hero-photo"
+             onerror="this.style.display='none'; document.getElementById('photo-initials').style.display='flex';" />
+        <div id="photo-initials" class="photo-initials" style="display:none;">UKR</div>
+      </div>
+      <div class="open-badge">🟢 Open to Internships 2026–27</div>
+      <h1 class="hero-name">Utkarsh Kumar Rai</h1>
+      <div class="hero-tagline">
+        <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-sub">Building AI systems and software that actually work in production — from fine-tuning transformers to designing distributed systems and shipping real applications.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="resume.pdf" class="btn btn-outline" target="_blank" rel="noopener">Download Resume</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="about-photo-wrap">
+            <img src="photo.png" alt="Utkarsh Kumar Rai" class="about-photo" />
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card tilt-card">
+              <div class="stat-number">4</div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-card tilt-card">
+              <div class="stat-number">120K+</div>
+              <div class="stat-label">Images Trained On</div>
+            </div>
+            <div class="stat-card tilt-card">
+              <div class="stat-number">87%</div>
+              <div class="stat-label">Recall@10</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-right reveal">
+          <div class="about-tag">EEE @ ABV-IIITM Gwalior</div>
+          <h3 class="about-heading">AI Engineering + SDE — building systems end to end.</h3>
+          <p>I'm a third-year B.Tech Electronics & Electrical Engineering student at ABV-IIITM Gwalior (CGPA 7.46, graduating 2027). My work spans two domains: AI/ML engineering and backend software development — I build things end to end, from model training to deployed applications and distributed systems.</p>
+          <p>I've self-taught my way through Vision Transformers, LLM fine-tuning, FAISS vector search, gRPC-based distributed systems, and cloud deployment. I believe the best way to understand a technology is to ship something real with it.</p>
+          <p>I'm actively seeking internships in AI Engineering or SDE roles for 2026–27 where I can contribute to systems that matter. Based in Cuttack, Odisha — available remote or on-site.</p>
+          <div class="about-links">
+            <a href="mailto:utkarshkumarrai2005@gmail.com" class="about-link">📧 utkarshkumarrai2005@gmail.com</a>
+            <a href="https://github.com/UtkarshKumarRai911" target="_blank" rel="noopener" class="about-link">⬡ GitHub</a>
+            <a href="https://leetcode.com/u/UKR27/" target="_blank" rel="noopener" class="about-link">⚡ LeetCode</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">Technical <span class="accent">Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">Languages</h3>
+          <div class="skill-badges">
+            <span class="badge">Python</span>
+            <span class="badge">C++</span>
+            <span class="badge">C</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">ML / Deep Learning</h3>
+          <div class="skill-badges">
+            <span class="badge">PyTorch</span>
+            <span class="badge">ViT</span>
+            <span class="badge">ArcFace</span>
+            <span class="badge">FAISS</span>
+            <span class="badge">LoRA</span>
+            <span class="badge">RAG</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">NLP / GenAI</h3>
+          <div class="skill-badges">
+            <span class="badge">HuggingFace</span>
+            <span class="badge">PEFT</span>
+            <span class="badge">TRL</span>
+            <span class="badge">Gradio</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">Computer Vision</h3>
+          <div class="skill-badges">
+            <span class="badge">OpenCV</span>
+            <span class="badge">Similarity Search</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">Backend</h3>
+          <div class="skill-badges">
+            <span class="badge">gRPC</span>
+            <span class="badge">REST APIs</span>
+            <span class="badge">Docker</span>
+            <span class="badge">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">Tools</h3>
+          <div class="skill-badges">
+            <span class="badge">NumPy</span>
+            <span class="badge">Pandas</span>
+            <span class="badge">Git</span>
+            <span class="badge">Streamlit</span>
+            <span class="badge">MLflow</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">Featured <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <!-- Card 1 -->
+        <div class="project-card tilt-card reveal" data-gradient="var(--grad1)">
+          <div class="card-gradient-bar" style="background: linear-gradient(90deg, #6C63FF, #3ECFCF);"></div>
+          <div class="card-body">
+            <h3 class="card-title">Visual Search Engine for E-Commerce</h3>
+            <p class="card-desc">Fine-tuned ViT-B/16 with ArcFace metric learning on 120,053 product images. Achieved 87.17% Recall@10 — 17 percentage points above the ResNet50 baseline. FAISS HNSW index delivers 0.2ms search latency over the full catalog.</p>
+            <div class="card-metrics">
+              <span class="metric">87.17% Recall@10</span>
+              <span class="metric">11× faster search</span>
+              <span class="metric">120K images</span>
+              <span class="metric">0.2ms latency</span>
+            </div>
+            <div class="card-tech">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">PyTorch</span>
+              <span class="tech-pill">ViT</span>
+              <span class="tech-pill">ArcFace</span>
+              <span class="tech-pill">FAISS</span>
+              <span class="tech-pill">Streamlit</span>
+              <span class="tech-pill">HuggingFace</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://visual-search-engine-utkarsh.streamlit.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">🚀 Live Demo</a>
+              <a href="https://github.com/UtkarshKumarRai911" target="_blank" rel="noopener" class="btn btn-outline btn-sm">⬡ GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="project-card tilt-card reveal" data-gradient="var(--grad2)">
+          <div class="card-gradient-bar" style="background: linear-gradient(90deg, #FF6B9D, #6C63FF);"></div>
+          <div class="card-body">
+            <h3 class="card-title">E-Commerce Product Assistant (LLM + RAG)</h3>
+            <p class="card-desc">Fine-tuned TinyLlama-1.1B with LoRA adapters on 5,000 Q&A pairs in under 15 minutes on Colab T4. Built a FAISS RAG pipeline over 10,000 product descriptions — eliminates hallucination by grounding answers in real catalog data.</p>
+            <div class="card-metrics">
+              <span class="metric">&lt;50ms retrieval</span>
+              <span class="metric">&gt;80% hit rate</span>
+              <span class="metric">10K products</span>
+              <span class="metric">LoRA r=16</span>
+            </div>
+            <div class="card-tech">
+              <span class="tech-pill">PyTorch</span>
+              <span class="tech-pill">HuggingFace</span>
+              <span class="tech-pill">PEFT</span>
+              <span class="tech-pill">FAISS</span>
+              <span class="tech-pill">sentence-transformers</span>
+              <span class="tech-pill">Gradio</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/UtkarshKumarRai911/ecommerce-product-assistant" target="_blank" rel="noopener" class="btn btn-outline btn-sm">⬡ GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="project-card tilt-card reveal" data-gradient="var(--grad3)">
+          <div class="card-gradient-bar" style="background: linear-gradient(90deg, #3ECFCF, #22C55E);"></div>
+          <div class="card-body">
+            <h3 class="card-title">ParaQuery — Distributed SQL Engine</h3>
+            <p class="card-desc">Distributed SQL query engine across 3 parallel worker nodes via gRPC streaming. Achieved 1.70× speedup over single-node execution processing 2M+ rows. Implements predicate pushdown, MapReduce-style aggregation, and fault recovery.</p>
+            <div class="card-metrics">
+              <span class="metric">1.70× speedup</span>
+              <span class="metric">2M+ rows</span>
+              <span class="metric">3 worker nodes</span>
+              <span class="metric">Fault tolerant</span>
+            </div>
+            <div class="card-tech">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">gRPC</span>
+              <span class="tech-pill">SQL</span>
+              <span class="tech-pill">Docker</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/UtkarshKumarRai911/ParaQuery" target="_blank" rel="noopener" class="btn btn-outline btn-sm">⬡ GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 — Mini-Redis -->
+        <div class="project-card tilt-card reveal">
+          <div class="card-gradient-bar" style="background: linear-gradient(90deg, #FF6B9D, #FF9A3C);"></div>
+          <div class="card-body">
+            <h3 class="card-title">Mini-Redis — In-Memory Key-Value Store</h3>
+            <p class="card-desc">Multi-threaded TCP server achieving 30,000+ ops/sec with custom RESP wire protocol. Thread-safe connection pool using OS semaphores, AOF persistence for zero data loss, and atomic MULTI/EXEC transactions with LRU eviction.</p>
+            <div class="card-metrics">
+              <span class="metric">30K+ ops/sec</span>
+              <span class="metric">10 concurrent clients</span>
+              <span class="metric">48 unit tests</span>
+              <span class="metric">Zero data loss</span>
+            </div>
+            <div class="card-tech">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">TCP Sockets</span>
+              <span class="tech-pill">Threading</span>
+              <span class="tech-pill">RESP Protocol</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://github.com/UtkarshKumarRai911/mini-redis" target="_blank" rel="noopener" class="btn btn-outline btn-sm">⬡ GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-date">May 2026 – July 2026</div>
+            <h3 class="timeline-title">Colloquium Guided Project</h3>
+            <div class="timeline-org">ABV-IIITM Gwalior · Dept. of EEE</div>
+            <p class="timeline-desc">Visual Search Engine for E-Commerce Products, under the guidance of Dr. Neelesh Yadav. Developed a production-ready similarity search system using Vision Transformers and ArcFace metric learning, achieving state-of-the-art retrieval performance on a 120K-image product catalog.</p>
+            <div class="timeline-tags">
+              <span class="tech-pill">Research</span>
+              <span class="tech-pill">Computer Vision</span>
+              <span class="tech-pill">ML Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <h2 class="section-title reveal">Achievements</h2>
+      <div class="achievements-grid">
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-icon">🎯</div>
+          <h3 class="achievement-title">JEE Advanced 2023</h3>
+          <p class="achievement-desc">Secured AIR 12,000 — top ~8% among 150,000+ candidates in one of India's most competitive engineering entrance exams.</p>
+        </div>
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-icon">🛒</div>
+          <h3 class="achievement-title">Flipkart Grid 6.0</h3>
+          <p class="achievement-desc">Led a 3-member team to Level 2 in Flipkart's national-level engineering challenge, competing among thousands of college teams.</p>
+        </div>
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-icon">🌐</div>
+          <h3 class="achievement-title">Google Solution Challenge 2025</h3>
+          <p class="achievement-desc">Built a full-stack application leveraging Google Cloud, Maps API, and Firebase for real-world impact, as part of Google's global developer challenge.</p>
+        </div>
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-icon">🏅</div>
+          <h3 class="achievement-title">MCM Type-1 Scholarship</h3>
+          <p class="achievement-desc">Awarded Merit-cum-Means scholarship in the first year at ABV-IIITM Gwalior, recognizing academic performance and financial merit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Get In <span class="accent">Touch</span></h2>
+      <div class="contact-wrap reveal">
+        <div class="contact-card glass-card glow-border">
+          <p class="contact-intro">I'm actively looking for internship opportunities in AI Engineering and SDE roles for 2026–27. Whether you have a project in mind or just want to connect — my inbox is open.</p>
+          <div class="contact-open-tag">🟢 Open to internship opportunities for 2026–27</div>
+          <div class="contact-links">
+            <a href="mailto:utkarshkumarrai2005@gmail.com" class="contact-link">
+              <span class="contact-link-icon">📧</span>
+              <span>utkarshkumarrai2005@gmail.com</span>
+            </a>
+            <a href="https://github.com/UtkarshKumarRai911" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-link-icon">⬡</span>
+              <span>github.com/UtkarshKumarRai911</span>
+            </a>
+            <a href="https://leetcode.com/u/UKR27/" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-link-icon">⚡</span>
+              <span>leetcode.com/u/UKR27</span>
+            </a>
+            <a href="https://visual-search-engine-utkarsh.streamlit.app/" target="_blank" rel="noopener" class="contact-link">
+              <span class="contact-link-icon">🚀</span>
+              <span>visual-search-engine-utkarsh.streamlit.app</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Built by <span class="accent">Utkarsh Kumar Rai</span> · 2026</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
